@@ -33,10 +33,6 @@ class Assets {
   /// assets/images/ice_cream.png
   static const String assetsImagesIceCream = "assets/images/ice_cream.png";
 
-  /// Assets for assetsImagesIconTrash
-  /// assets/images/Icon_trash.png
-  static const String assetsImagesIconTrash = "assets/images/Icon_trash.png";
-
   /// Assets for assetsImagesLogo
   /// assets/images/Logo.png
   static const String assetsImagesLogo = "assets/images/Logo.png";
@@ -76,6 +72,14 @@ class Assets {
   /// Assets for assetsImagesSmsIcon
   /// assets/images/sms_icon.svg
   static const String assetsImagesSmsIcon = "assets/images/sms_icon.svg";
+
+  /// Assets for assetsImagesSplashBackground
+  /// assets/images/splash_background.png
+  static const String assetsImagesSplashBackground = "assets/images/splash_background.png";
+
+  /// Assets for assetsImagesTrashIcon
+  /// assets/images/trash_icon.svg
+  static const String assetsImagesTrashIcon = "assets/images/trash_icon.svg";
 
   /// Assets for assetsImagesVeganResto
   /// assets/images/vegan_resto.png

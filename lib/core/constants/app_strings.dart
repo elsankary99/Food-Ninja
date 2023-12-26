@@ -1,5 +1,6 @@
 class AppStrings {
   static const String welcomeMessage = "Find your Comfort Food here";
+  static const String deliveryFavoriteFood = "Delivery Favorite Food";
   static const String flavorMessage =
       "Here You Can find a chef or dish for every taste and color. Enjoy!";
   static const String next = "Next";
