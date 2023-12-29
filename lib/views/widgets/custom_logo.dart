@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_ninja/core/constants/app_images.dart';
 import 'package:food_ninja/core/constants/app_strings.dart';
-import 'package:food_ninja/core/extensions/extentions.dart';
+import 'package:food_ninja/core/extensions/extensions.dart';
 
 class CustomLogo extends StatelessWidget {
   const CustomLogo({super.key});

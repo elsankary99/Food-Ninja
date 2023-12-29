@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:food_ninja/core/constants/app_colors.dart';
 
 class AppTheme {
@@ -7,9 +8,15 @@ class AppTheme {
     canvasColor: Colors.black,
     primaryColor: AppColors.green,
     hintColor: AppColors.orange,
-    textTheme: const TextTheme(
+    textTheme: TextTheme(
       labelSmall: TextStyle(
-        fontSize: 13,
+        fontSize: 13.sp,
+        color: AppColors.blackText,
+        fontFamily: "LibreFranklin",
+      ),
+      labelMedium: TextStyle(
+        fontSize: 28.sp,
+        fontWeight: FontWeight.bold,
         color: AppColors.blackText,
         fontFamily: "LibreFranklin",
       ),
