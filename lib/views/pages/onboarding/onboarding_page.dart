@@ -61,7 +61,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                     ),
                     Column(
                       children: [
-                        SizedBox(height: context.height * 0.04),
+                        SizedBox(height: context.height * 0.042),
                         Text(
                           data.title,
                           textAlign: TextAlign.center,
@@ -74,16 +74,17 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                           style: context.textTheme.labelSmall!
                               .copyWith(fontSize: 14.sp),
                         ),
-                        SizedBox(height: context.height * 0.08),
+                        SizedBox(height: context.height * 0.1),
                         CustomButton(
+                          title: AppStrings.next,
                           onTap: () {
-                            if (index == 1) {
+                            if (index == itemsList.length - 1) {
                               context.router.replaceAll([const LoginRoute()]);
                             }
                             setState(() {
                               controller.animateToPage(1,
-                                  duration: const Duration(milliseconds: 300),
-                                  curve: Curves.bounceInOut);
+                                  duration: const Duration(milliseconds: 500),
+                                  curve: Curves.easeInOut);
                             });
                           },
                         ),

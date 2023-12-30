@@ -4,10 +4,11 @@ import 'package:food_ninja/core/constants/app_colors.dart';
 
 class AppTheme {
   static ThemeData lightThem = ThemeData(
-    scaffoldBackgroundColor: Colors.white,
+    scaffoldBackgroundColor: AppColors.light,
     canvasColor: Colors.black,
     primaryColor: AppColors.green,
     hintColor: AppColors.orange,
+    disabledColor: Colors.white,
     textTheme: TextTheme(
       labelSmall: TextStyle(
         fontSize: 13.sp,
@@ -15,7 +16,7 @@ class AppTheme {
         fontFamily: "LibreFranklin",
       ),
       labelMedium: TextStyle(
-        fontSize: 28.sp,
+        fontSize: 22.sp,
         fontWeight: FontWeight.bold,
         color: AppColors.blackText,
         fontFamily: "LibreFranklin",

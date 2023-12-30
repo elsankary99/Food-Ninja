@@ -7,14 +7,14 @@ class AppStrings {
   static const String tagline = "Food Ninja is Where Your \nComfort Food Lives";
   static const String deliveryMessage =
       "Enjoy a fast and smooth food delivery at \nyour doorstep";
-  static const String login = "Login To Your Account";
+  static const String loginYourAccount = "Login To Your Account";
   static const String email = "Email";
   static const String password = "Password";
   static const String continueWith = "Or Continue With";
   static const String googleLogin = "Google";
   static const String facebookLogin = "Facebook";
   static const String forgotPassword = "Forgot Your Password?";
-  static const String loginButton = "Login";
+  static const String login = "Login";
   static const String signUpForFree = "Sign Up For Free ";
   static const String createAccountButton = "Create Account";
   static const String alreadyHaveAccount = "already have an account?";

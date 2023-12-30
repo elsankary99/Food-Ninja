@@ -12,7 +12,10 @@ class CustomLogo extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Image.asset(Assets.assetsImagesLogo),
+          Image.asset(
+            Assets.assetsImagesLogo,
+            fit: BoxFit.fill,
+          ),
           Text(
             AppStrings.deliveryFavoriteFood,
             style: context.textTheme.labelSmall!
