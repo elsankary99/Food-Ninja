@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:food_ninja/core/constants/app_colors.dart';
 import 'package:food_ninja/core/extensions/extensions.dart';
 
 class CustomTextFormField extends StatelessWidget {
   final String hint;
-  final Widget? prefixIcon;
+  final String? prefixIcon;
   final Widget? suffixIcon;
   final TextEditingController? controller;
   final String? Function(String?)? validator;
@@ -27,7 +28,14 @@ class CustomTextFormField extends StatelessWidget {
       cursorColor: AppColors.deepGreen,
       decoration: InputDecoration(
         suffixIcon: suffixIcon,
-        prefixIcon: prefixIcon,
+        prefixIcon: prefixIcon != null
+            ? Padding(
+                padding: EdgeInsets.symmetric(horizontal: 10.w),
+                child: SvgPicture.asset(
+                  prefixIcon!,
+                ),
+              )
+            : null,
         hintText: hint,
         hintStyle: context.textTheme.labelSmall!
             .copyWith(color: Colors.grey.withOpacity(0.6)),

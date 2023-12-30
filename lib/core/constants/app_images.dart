@@ -21,6 +21,10 @@ class Assets {
   /// assets/images/email_icon.svg
   static const String assetsImagesEmailIcon = "assets/images/email_icon.svg";
 
+  /// Assets for assetsImagesEmailLogo
+  /// assets/images/email_logo.svg
+  static const String assetsImagesEmailLogo = "assets/images/email_logo.svg";
+
   /// Assets for assetsImagesFacebook
   /// assets/images/facebook.svg
   static const String assetsImagesFacebook = "assets/images/facebook.svg";
@@ -53,6 +57,10 @@ class Assets {
   /// assets/images/onboarding_2.png
   static const String assetsImagesOnboarding2 = "assets/images/onboarding_2.png";
 
+  /// Assets for assetsImagesPasswordLogo
+  /// assets/images/password_logo.svg
+  static const String assetsImagesPasswordLogo = "assets/images/password_logo.svg";
+
   /// Assets for assetsImagesPattern
   /// assets/images/Pattern.png
   static const String assetsImagesPattern = "assets/images/Pattern.png";
@@ -64,6 +72,10 @@ class Assets {
   /// Assets for assetsImagesPaypalLogo
   /// assets/images/paypal_logo.png
   static const String assetsImagesPaypalLogo = "assets/images/paypal_logo.png";
+
+  /// Assets for assetsImagesProfileLogo
+  /// assets/images/profile_logo.svg
+  static const String assetsImagesProfileLogo = "assets/images/profile_logo.svg";
 
   /// Assets for assetsImagesSearchIcon
   /// assets/images/search_icon.png

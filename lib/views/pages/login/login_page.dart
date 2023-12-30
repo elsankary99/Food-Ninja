@@ -43,10 +43,12 @@ class LoginPage extends StatelessWidget {
                   ),
                   SizedBox(height: context.height * 0.04),
                   const CustomTextFormField(
+                    prefixIcon: Assets.assetsImagesEmailLogo,
                     hint: AppStrings.email,
                   ),
                   SizedBox(height: context.height * 0.02),
                   const CustomTextFormField(
+                    prefixIcon: Assets.assetsImagesPasswordLogo,
                     hint: AppStrings.password,
                   ),
                   SizedBox(height: context.height * 0.02),
