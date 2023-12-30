@@ -10,6 +10,7 @@ class AppStrings {
   static const String loginYourAccount = "Login To Your Account";
   static const String email = "Email";
   static const String password = "Password";
+  static const String userName = "UserName";
   static const String continueWith = "Or Continue With";
   static const String googleLogin = "Google";
   static const String facebookLogin = "Facebook";
@@ -18,11 +19,14 @@ class AppStrings {
   static const String signUpForFree = "Sign Up For Free ";
   static const String createAccountButton = "Create Account";
   static const String alreadyHaveAccount = "already have an account?";
+  static const String dontHaveAccount = "don't have an account?";
   static const String fillBio = "Fill in your bio to get started";
   static const String bioDisplay =
       "This data will be displayed in your account profile for security";
   static const String firstName = "First Name";
   static const String lastName = "Last Name";
+  static const String keepMeSignIn = 'Keep Me Signed In';
+  static const String emailMeAboutSpecial = "Email Me About Special Pricing";
   static const String mobileNumber = "Mobile Number";
   static const String paymentMethod = "Payment Method ";
   static const String uploadPhotoProfile = "Upload Your Photo Profile";

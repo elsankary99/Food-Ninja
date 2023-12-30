@@ -38,6 +38,7 @@ dependencies:
   flutter_svg: ^2.0.9
   shared_preferences: ^2.2.2
 
+
 dev_dependencies:
   auto_route_generator: ^7.3.2
   build_runner: ^2.4.7

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:food_ninja/core/constants/app_images.dart';
 import 'package:food_ninja/core/constants/app_strings.dart';
-import 'package:food_ninja/views/widgets/login_widgets/social_button.dart';
+import 'package:food_ninja/views/widgets/auth_widgets/social_button.dart';
 
 class LoginWithSocial extends StatelessWidget {
   const LoginWithSocial({super.key});

@@ -1,14 +1,16 @@
-import 'package:auto_route/annotations.dart';
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:food_ninja/core/constants/app_colors.dart';
 import 'package:food_ninja/core/constants/app_images.dart';
 import 'package:food_ninja/core/constants/app_strings.dart';
 import 'package:food_ninja/core/extensions/extensions.dart';
+import 'package:food_ninja/core/routers/app_router.dart';
+import 'package:food_ninja/views/widgets/auth_widgets/logo_and_text.dart';
+import 'package:food_ninja/views/widgets/clickable_text.dart';
 import 'package:food_ninja/views/widgets/custom_button.dart';
-import 'package:food_ninja/views/widgets/custom_logo.dart';
 import 'package:food_ninja/views/widgets/custom_text_form_field.dart';
-import 'package:food_ninja/views/widgets/login_widgets/social_login.dart';
+import 'package:food_ninja/views/widgets/auth_widgets/social_login.dart';
 
 @RoutePage()
 class LoginPage extends StatelessWidget {
@@ -33,15 +35,7 @@ class LoginPage extends StatelessWidget {
               physics: const BouncingScrollPhysics(),
               child: Column(
                 children: [
-                  SizedBox(height: context.height * 0.035),
-                  const CustomLogo(),
-                  SizedBox(height: context.height * 0.035),
-                  Text(
-                    AppStrings.loginYourAccount,
-                    style: context.textTheme.labelMedium!
-                        .copyWith(fontSize: 20.sp),
-                  ),
-                  SizedBox(height: context.height * 0.04),
+                  const LogoAndText(title: AppStrings.loginYourAccount),
                   const CustomTextFormField(
                     prefixIcon: Assets.assetsImagesEmailLogo,
                     hint: AppStrings.email,
@@ -73,7 +67,11 @@ class LoginPage extends StatelessWidget {
                     title: AppStrings.login,
                     onTap: () {},
                   ),
-                  SizedBox(height: context.height * 0.01),
+                  SizedBox(height: context.height * 0.02),
+                  ClickableText(
+                    text: AppStrings.dontHaveAccount,
+                    onTap: () => context.router.replace(const SignUpRoute()),
+                  ),
                 ],
               ),
             ),
