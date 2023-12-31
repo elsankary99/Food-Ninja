@@ -11,7 +11,7 @@ void main() async {
     ProviderScope(
       overrides: overrides,
       child: DevicePreview(
-        enabled: !kReleaseMode,
+        enabled: kReleaseMode,
         builder: (context) => const MyApp(), // Wrap your app
       ),
     ),

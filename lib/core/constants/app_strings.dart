@@ -20,9 +20,9 @@ class AppStrings {
   static const String createAccountButton = "Create Account";
   static const String alreadyHaveAccount = "already have an account?";
   static const String dontHaveAccount = "don't have an account?";
-  static const String fillBio = "Fill in your bio to get started";
+  static const String fillBio = "Fill in your bio to get \nstarted";
   static const String bioDisplay =
-      "This data will be displayed in your account profile for security";
+      "This data will be displayed in your account \nprofile for security";
   static const String firstName = "First Name";
   static const String lastName = "Last Name";
   static const String keepMeSignIn = 'Keep Me Signed In';

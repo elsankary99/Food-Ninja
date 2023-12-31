@@ -3,6 +3,7 @@ import 'package:food_ninja/views/pages/login/login_page.dart';
 import 'package:food_ninja/views/pages/onboarding/onboarding_page.dart';
 import 'package:food_ninja/views/pages/signup/sign_up_page.dart';
 import 'package:food_ninja/views/pages/splash/splash_page.dart';
+import 'package:food_ninja/views/pages/user_info/user_info_page.dart';
 
 part 'app_router.gr.dart';
 
@@ -16,5 +17,6 @@ class AppRouter extends _$AppRouter {
         AutoRoute(page: OnBoardingRoute.page),
         AutoRoute(page: LoginRoute.page),
         AutoRoute(page: SignUpRoute.page),
+        AutoRoute(page: UserInformationRoute.page),
       ];
 }
