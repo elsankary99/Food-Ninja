@@ -28,30 +28,32 @@ class PaymentMethodPage extends StatelessWidget {
         child: SafeArea(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 16.w),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                SizedBox(height: 10.h),
-                const CustomBackButton(),
-                const WelcomeText(
-                  title: AppStrings.paymentMethod,
-                  subTitle: AppStrings.bioDisplay,
-                ),
-                const PaymentCard(
-                  image: Assets.assetsImagesPaypalLogo,
-                ),
-                const PaymentCard(
-                  image: Assets.assetsImagesVisa,
-                ),
-                const PaymentCard(
-                  image: Assets.assetsImagesPayoneer,
-                ),
-                SizedBox(height: context.height * 0.26),
-                Center(
-                  child: CustomButton(onTap: () {}, title: AppStrings.next),
-                ),
-                SizedBox(height: context.height * 0.02),
-              ],
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  SizedBox(height: 10.h),
+                  const CustomBackButton(),
+                  const WelcomeText(
+                    title: AppStrings.paymentMethod,
+                    subTitle: AppStrings.bioDisplay,
+                  ),
+                  const PaymentCard(
+                    image: Assets.assetsImagesPaypalLogo,
+                  ),
+                  const PaymentCard(
+                    image: Assets.assetsImagesVisa,
+                  ),
+                  const PaymentCard(
+                    image: Assets.assetsImagesPayoneer,
+                  ),
+                  SizedBox(height: context.height * 0.26),
+                  Center(
+                    child: CustomButton(onTap: () {}, title: AppStrings.next),
+                  ),
+                  SizedBox(height: context.height * 0.02),
+                ],
+              ),
             ),
           ),
         ),

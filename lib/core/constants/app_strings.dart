@@ -29,7 +29,7 @@ class AppStrings {
   static const String emailMeAboutSpecial = "Email Me About Special Pricing";
   static const String mobileNumber = "Mobile Number";
   static const String paymentMethod = "Payment Method ";
-  static const String uploadPhotoProfile = "Upload Your Photo Profile";
+  static const String uploadPhotoProfile = "Upload Your Photo \nProfile";
   static const String fromGallery = "From Gallery";
   static const String takePhoto = "Take Photo ";
   static const String setLocation = "Set Your Location ";
