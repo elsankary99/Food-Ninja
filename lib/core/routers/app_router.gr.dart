@@ -27,6 +27,12 @@ abstract class _$AppRouter extends RootStackRouter {
         child: const OnBoardingPage(),
       );
     },
+    PaymentMethodRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const PaymentMethodPage(),
+      );
+    },
     SignUpRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
@@ -37,6 +43,12 @@ abstract class _$AppRouter extends RootStackRouter {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
         child: const SplashPage(),
+      );
+    },
+    UploadPhotoRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const UploadPhotoPage(),
       );
     },
     UserInformationRoute.name: (routeData) {
@@ -77,6 +89,20 @@ class OnBoardingRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
+/// [PaymentMethodPage]
+class PaymentMethodRoute extends PageRouteInfo<void> {
+  const PaymentMethodRoute({List<PageRouteInfo>? children})
+      : super(
+          PaymentMethodRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'PaymentMethodRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
 /// [SignUpPage]
 class SignUpRoute extends PageRouteInfo<void> {
   const SignUpRoute({List<PageRouteInfo>? children})
@@ -100,6 +126,20 @@ class SplashRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'SplashRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [UploadPhotoPage]
+class UploadPhotoRoute extends PageRouteInfo<void> {
+  const UploadPhotoRoute({List<PageRouteInfo>? children})
+      : super(
+          UploadPhotoRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'UploadPhotoRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
 }

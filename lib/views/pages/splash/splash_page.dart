@@ -16,7 +16,7 @@ class SplashPage extends StatefulWidget {
 class _SplashPageState extends State<SplashPage> {
   Future<void> goToOnBoarding() async {
     Future.delayed(const Duration(seconds: 2), () {
-      context.router.replaceAll([const UserInformationRoute()]);
+      context.router.replaceAll([const UploadPhotoRoute()]);
     });
   }
 
