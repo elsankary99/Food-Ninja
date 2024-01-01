@@ -1,8 +1,9 @@
 import 'package:auto_route/auto_route.dart';
-import 'package:food_ninja/views/pages/login/login_page.dart';
+import 'package:food_ninja/views/pages/auth/login/login_page.dart';
 import 'package:food_ninja/views/pages/onboarding/onboarding_page.dart';
 import 'package:food_ninja/views/pages/payment_method/payment_method_page.dart';
-import 'package:food_ninja/views/pages/signup/sign_up_page.dart';
+import 'package:food_ninja/views/pages/set_location/set_location_page.dart';
+import 'package:food_ninja/views/pages/auth/signup/sign_up_page.dart';
 import 'package:food_ninja/views/pages/splash/splash_page.dart';
 import 'package:food_ninja/views/pages/upload_photo/upload_photo_page.dart';
 import 'package:food_ninja/views/pages/user_info/user_info_page.dart';
@@ -22,5 +23,6 @@ class AppRouter extends _$AppRouter {
         AutoRoute(page: UserInformationRoute.page),
         AutoRoute(page: PaymentMethodRoute.page),
         AutoRoute(page: UploadPhotoRoute.page),
+        AutoRoute(page: SetLocationRoute.page),
       ];
 }

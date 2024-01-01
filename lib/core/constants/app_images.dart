@@ -61,6 +61,10 @@ class Assets {
   /// assets/images/ice_cream.png
   static const String assetsImagesIceCream = "assets/images/ice_cream.png";
 
+  /// Assets for assetsImagesLocationIcon
+  /// assets/images/location_icon.svg
+  static const String assetsImagesLocationIcon = "assets/images/location_icon.svg";
+
   /// Assets for assetsImagesLogo
   /// assets/images/Logo.png
   static const String assetsImagesLogo = "assets/images/Logo.png";

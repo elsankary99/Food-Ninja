@@ -6,11 +6,11 @@ import 'package:food_ninja/core/constants/app_images.dart';
 import 'package:food_ninja/core/constants/app_strings.dart';
 import 'package:food_ninja/core/extensions/extensions.dart';
 import 'package:food_ninja/core/routers/app_router.dart';
-import 'package:food_ninja/views/widgets/auth_widgets/logo_and_text.dart';
+import 'package:food_ninja/views/pages/auth/widgets/logo_and_text.dart';
 import 'package:food_ninja/views/widgets/clickable_text.dart';
 import 'package:food_ninja/views/widgets/custom_button.dart';
 import 'package:food_ninja/views/widgets/custom_text_form_field.dart';
-import 'package:food_ninja/views/widgets/auth_widgets/social_login.dart';
+import 'package:food_ninja/views/pages/auth/widgets/social_login.dart';
 
 @RoutePage()
 class LoginPage extends StatelessWidget {

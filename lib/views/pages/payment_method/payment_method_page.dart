@@ -6,7 +6,7 @@ import 'package:food_ninja/core/constants/app_strings.dart';
 import 'package:food_ninja/core/extensions/extensions.dart';
 import 'package:food_ninja/views/widgets/custom_back_button.dart';
 import 'package:food_ninja/views/widgets/custom_button.dart';
-import 'package:food_ninja/views/widgets/payment_method_wigets/payment_card.dart';
+import 'package:food_ninja/views/pages/payment_method/widgets/payment_card.dart';
 import 'package:food_ninja/views/widgets/welcome_text.dart';
 
 @RoutePage()

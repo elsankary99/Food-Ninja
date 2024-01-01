@@ -33,6 +33,12 @@ abstract class _$AppRouter extends RootStackRouter {
         child: const PaymentMethodPage(),
       );
     },
+    SetLocationRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const SetLocationPage(),
+      );
+    },
     SignUpRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
@@ -98,6 +104,20 @@ class PaymentMethodRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'PaymentMethodRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [SetLocationPage]
+class SetLocationRoute extends PageRouteInfo<void> {
+  const SetLocationRoute({List<PageRouteInfo>? children})
+      : super(
+          SetLocationRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'SetLocationRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
 }
