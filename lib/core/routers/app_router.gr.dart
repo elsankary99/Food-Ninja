@@ -15,6 +15,12 @@ abstract class _$AppRouter extends RootStackRouter {
 
   @override
   final Map<String, PageFactory> pagesMap = {
+    CreatedSuccessfullyRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const CreatedSuccessfullyPage(),
+      );
+    },
     LoginRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
@@ -64,6 +70,20 @@ abstract class _$AppRouter extends RootStackRouter {
       );
     },
   };
+}
+
+/// generated route for
+/// [CreatedSuccessfullyPage]
+class CreatedSuccessfullyRoute extends PageRouteInfo<void> {
+  const CreatedSuccessfullyRoute({List<PageRouteInfo>? children})
+      : super(
+          CreatedSuccessfullyRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'CreatedSuccessfullyRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
 }
 
 /// generated route for
