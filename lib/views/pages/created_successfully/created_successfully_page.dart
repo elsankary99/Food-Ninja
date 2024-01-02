@@ -28,7 +28,7 @@ class CreatedSuccessfullyPage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               SizedBox(height: context.height * 0.24),
-              const CongratsWidgets(),
+              const CongratsWidgets(title: AppStrings.profileReadyMessage),
               SizedBox(height: context.height * 0.23),
               CustomButton(onTap: () {}, title: AppStrings.tryOrderButton),
             ],

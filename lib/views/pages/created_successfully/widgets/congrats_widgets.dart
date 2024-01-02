@@ -2,13 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:food_ninja/core/constants/app_images.dart';
-import 'package:food_ninja/core/constants/app_strings.dart';
 import 'package:food_ninja/core/extensions/extensions.dart';
 
 class CongratsWidgets extends StatelessWidget {
   const CongratsWidgets({
     super.key,
+    required this.title,
   });
+  final String title;
 
   @override
   Widget build(BuildContext context) {
@@ -25,7 +26,7 @@ class CongratsWidgets extends StatelessWidget {
         ),
         SizedBox(height: 20.h),
         Text(
-          AppStrings.profileReadyMessage,
+          title,
           style: context.textTheme.labelMedium!.copyWith(
             fontSize: 20.sp,
           ),

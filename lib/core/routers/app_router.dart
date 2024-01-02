@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:food_ninja/views/pages/auth/login/login_page.dart';
+import 'package:food_ninja/views/pages/auth/reset_password/reset_password_page.dart';
 import 'package:food_ninja/views/pages/created_successfully/created_successfully_page.dart';
 import 'package:food_ninja/views/pages/onboarding/onboarding_page.dart';
 import 'package:food_ninja/views/pages/payment_method/payment_method_page.dart';
@@ -19,8 +20,10 @@ class AppRouter extends _$AppRouter {
   List<AutoRoute> get routes => [
         AutoRoute(page: SplashRoute.page, initial: true),
         AutoRoute(page: OnBoardingRoute.page),
+        //?Auth
         AutoRoute(page: LoginRoute.page),
         AutoRoute(page: SignUpRoute.page),
+        AutoRoute(page: ResetPasswordRoute.page),
         AutoRoute(page: UserInformationRoute.page),
         AutoRoute(page: PaymentMethodRoute.page),
         AutoRoute(page: UploadPhotoRoute.page),

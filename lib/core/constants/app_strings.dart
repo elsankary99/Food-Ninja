@@ -49,6 +49,7 @@ class AppStrings {
   static const String newPassword = "New Password";
   static const String confirmPassword = "Confirm Password";
   static const String passwordResetSuccess = "Password reset successfully";
+  static const String resetYourPassword = "Reset your password \nhere";
 
   // static const String f = "";
   // static const String f = "";
