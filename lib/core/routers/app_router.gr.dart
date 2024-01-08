@@ -21,6 +21,12 @@ abstract class _$AppRouter extends RootStackRouter {
         child: const CreatedSuccessfullyPage(),
       );
     },
+    InitialRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const InitialPage(),
+      );
+    },
     LoginRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
@@ -88,6 +94,20 @@ class CreatedSuccessfullyRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'CreatedSuccessfullyRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [InitialPage]
+class InitialRoute extends PageRouteInfo<void> {
+  const InitialRoute({List<PageRouteInfo>? children})
+      : super(
+          InitialRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'InitialRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
 }

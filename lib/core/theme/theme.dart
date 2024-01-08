@@ -21,6 +21,12 @@ class AppTheme {
         color: AppColors.blackText,
         fontFamily: "LibreFranklin",
       ),
+      labelLarge: TextStyle(
+        fontSize: 30.sp,
+        fontWeight: FontWeight.w800,
+        color: AppColors.blackText,
+        fontFamily: "LibreFranklin",
+      ),
     ),
   );
 }
