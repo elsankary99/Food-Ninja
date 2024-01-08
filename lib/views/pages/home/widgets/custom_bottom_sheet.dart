@@ -59,7 +59,7 @@ class _CustomBottomSheetState extends State<CustomBottomSheet> {
             },
             child: AnimatedContainer(
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-              duration: const Duration(milliseconds: 500),
+              duration: const Duration(milliseconds: 350),
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(8.r),
                   color: equal ? AppColors.green.withOpacity(0.15) : null),

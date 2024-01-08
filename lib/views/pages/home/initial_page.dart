@@ -2,7 +2,10 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:food_ninja/core/constants/app_images.dart';
-import 'package:food_ninja/core/extensions/extensions.dart';
+import 'package:food_ninja/views/pages/home/taps/cart.dart';
+import 'package:food_ninja/views/pages/home/taps/chat.dart';
+import 'package:food_ninja/views/pages/home/taps/home.dart';
+import 'package:food_ninja/views/pages/home/taps/profile.dart';
 import 'package:food_ninja/views/pages/home/widgets/custom_bottom_sheet.dart';
 
 @RoutePage()
@@ -13,7 +16,15 @@ class InitialPage extends StatefulWidget {
   State<InitialPage> createState() => _InitialPageState();
 }
 
-class _InitialPageState extends State<InitialPage> {
+class _InitialPageState extends State<InitialPage>
+    with SingleTickerProviderStateMixin {
+  late TabController controller;
+  @override
+  void initState() {
+    controller = TabController(length: 4, vsync: this);
+    super.initState();
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,14 +41,17 @@ class _InitialPageState extends State<InitialPage> {
         ),
         child: SafeArea(
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16.w),
-            child: const SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [],
-              ),
-            ),
-          ),
+              padding: EdgeInsets.symmetric(horizontal: 16.w),
+              child: TabBarView(
+                physics: const NeverScrollableScrollPhysics(),
+                controller: controller,
+                children: const [
+                  HomeTap(),
+                  ProfileTap(),
+                  CartTap(),
+                  ChatTap(),
+                ],
+              )),
         ),
       ),
       bottomNavigationBar: SafeArea(
@@ -54,7 +68,9 @@ class _InitialPageState extends State<InitialPage> {
                 )
               ],
               borderRadius: BorderRadius.circular(15)),
-          child: CustomBottomSheet(onChanged: (value) {}),
+          child: CustomBottomSheet(onChanged: (value) {
+            setState(() => controller.animateTo(value));
+          }),
         ),
       ),
     );

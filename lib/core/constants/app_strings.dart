@@ -50,9 +50,9 @@ class AppStrings {
   static const String confirmPassword = "Confirm Password";
   static const String passwordResetSuccess = "Password reset successfully";
   static const String resetYourPassword = "Reset your password \nhere";
-  static const String findYourFavoriteFood = "Find Your Favorite Food";
-  static const String whatDoYouWantToOrder = "What do you want to order?";
-  static const String specialDealForOctober = "Special Deal For October";
+  static const String findYourFavoriteFood = "Find Your \nFavorite Food";
+  static const String whatDoYouWantToOrder = "  What do you want to order?";
+  static const String specialDealForOctober = "Special Deal For \nOctober";
   static const String nearestRestaurant = "Nearest Restaurant";
   static const String viewMore = "View More";
   static const String popularMenu = "Popular Menu";
@@ -64,6 +64,7 @@ class AppStrings {
   static const String chat = "Chat";
   static const String profile = "Profile";
   static const String cart = "Cart";
+  static const String buyNow = "Buy Now";
 
   // static const String f = "";
   // static const String f = "";

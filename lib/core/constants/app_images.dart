@@ -53,6 +53,10 @@ class Assets {
   /// assets/images/facebook.svg
   static const String assetsImagesFacebook = "assets/images/facebook.svg";
 
+  /// Assets for assetsImagesFilterIcon
+  /// assets/images/filter_icon.svg
+  static const String assetsImagesFilterIcon = "assets/images/filter_icon.svg";
+
   /// Assets for assetsImagesGallery
   /// assets/images/gallery.svg
   static const String assetsImagesGallery = "assets/images/gallery.svg";
@@ -76,6 +80,14 @@ class Assets {
   /// Assets for assetsImagesIceCream
   /// assets/images/ice_cream.png
   static const String assetsImagesIceCream = "assets/images/ice_cream.png";
+
+  /// Assets for assetsImagesIceCream2
+  /// assets/images/ice_cream_2.svg
+  static const String assetsImagesIceCream2 = "assets/images/ice_cream_2.svg";
+
+  /// Assets for assetsImagesIconSearch
+  /// assets/images/Icon_search.svg
+  static const String assetsImagesIconSearch = "assets/images/Icon_search.svg";
 
   /// Assets for assetsImagesLocationIcon
   /// assets/images/location_icon.svg
@@ -108,6 +120,10 @@ class Assets {
   /// Assets for assetsImagesPaypalLogo
   /// assets/images/paypal_logo.png
   static const String assetsImagesPaypalLogo = "assets/images/paypal_logo.png";
+
+  /// Assets for assetsImagesPell
+  /// assets/images/pell.svg
+  static const String assetsImagesPell = "assets/images/pell.svg";
 
   /// Assets for assetsImagesProfileLogo
   /// assets/images/profile_logo.svg
