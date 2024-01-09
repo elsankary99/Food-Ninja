@@ -28,6 +28,7 @@ class _InitialPageState extends State<InitialPage>
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBody: true,
       body: Container(
         width: double.infinity,
         height: double.infinity,
@@ -59,10 +60,11 @@ class _InitialPageState extends State<InitialPage>
           padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 10.h),
           margin: const EdgeInsets.all(12),
           decoration: BoxDecoration(
-              color: Theme.of(context).disabledColor,
+              color: Theme.of(context).hoverColor,
               boxShadow: [
                 BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
+                  color: Colors.grey.withOpacity(0.4),
+                  blurStyle: BlurStyle.outer,
                   blurRadius: 3,
                   spreadRadius: 0.1,
                 )

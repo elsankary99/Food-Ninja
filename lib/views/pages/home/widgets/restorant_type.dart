@@ -23,6 +23,7 @@ class ResonantType extends StatelessWidget {
         ),
         InkWell(
           onTap: () {},
+          splashColor: AppColors.lightOrange,
           child: Text(
             AppStrings.viewMore,
             style: context.textTheme.labelSmall!

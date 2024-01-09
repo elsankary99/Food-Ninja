@@ -18,7 +18,7 @@ class MyApp extends ConsumerWidget {
       builder: (_, child) => MaterialApp.router(
         locale: DevicePreview.locale(context),
         builder: DevicePreview.appBuilder,
-        theme: AppTheme.lightThem,
+        theme: AppTheme.darkThem,
         debugShowCheckedModeBanner: false,
         routerConfig: router.config(),
       ),
