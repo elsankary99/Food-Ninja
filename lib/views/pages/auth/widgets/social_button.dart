@@ -20,7 +20,7 @@ class SocialButton extends StatelessWidget {
       child: Container(
         padding: EdgeInsets.symmetric(horizontal: 18.w, vertical: 10.h),
         decoration: BoxDecoration(
-          color: Theme.of(context).disabledColor,
+          color: context.theme.hoverColor,
           border: Border.all(color: Colors.grey.withOpacity(0.2), width: 1.6),
           borderRadius: BorderRadius.circular(15),
         ),

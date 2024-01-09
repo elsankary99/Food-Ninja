@@ -39,7 +39,7 @@ class CustomTextFormField extends StatelessWidget {
         hintText: hint,
         hintStyle: context.textTheme.labelSmall!
             .copyWith(color: Colors.grey.withOpacity(0.6)),
-        fillColor: Theme.of(context).disabledColor,
+        fillColor: context.theme.hoverColor,
         filled: true,
         contentPadding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 16.h),
         border: OutlineInputBorder(

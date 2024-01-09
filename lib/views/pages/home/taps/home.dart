@@ -1,10 +1,13 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:food_ninja/core/constants/app_strings.dart';
 import 'package:food_ninja/core/extensions/extensions.dart';
+import 'package:food_ninja/core/routers/app_router.dart';
 import 'package:food_ninja/views/pages/home/widgets/custom_filter_icon.dart';
 import 'package:food_ninja/views/pages/home/widgets/custom_search_field.dart';
 import 'package:food_ninja/views/pages/home/widgets/green_card.dart';
+import 'package:food_ninja/views/pages/home/widgets/popular_restaurant_card.dart';
 import 'package:food_ninja/views/pages/home/widgets/restaurant_card.dart';
 import 'package:food_ninja/views/pages/home/widgets/restorant_type.dart';
 import 'package:food_ninja/views/pages/home/widgets/top_notification_icon.dart';
@@ -33,7 +36,7 @@ class HomeTap extends StatelessWidget {
           SizedBox(height: 16.h),
           ResonantType(
             title: AppStrings.nearestRestaurant,
-            onTap: () {},
+            onTap: () => context.router.push(const NearestRestaurantRoute()),
           ),
           SizedBox(height: 16.h),
           SizedBox(
@@ -41,15 +44,24 @@ class HomeTap extends StatelessWidget {
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               itemCount: 5,
-              itemBuilder: (context, index) => const RestaurantCard(),
+              itemBuilder: (context, index) => Padding(
+                padding: EdgeInsets.symmetric(horizontal: 8.w),
+                child: const RestaurantCard(),
+              ),
             ),
           ),
           SizedBox(height: 16.h),
           ResonantType(
-            title: AppStrings.nearestRestaurant,
-            onTap: () {},
+            title: AppStrings.popularMenu,
+            onTap: () => context.router.push(const PopularMenuRoute()),
           ),
           SizedBox(height: 16.h),
+          ListView.builder(
+            shrinkWrap: true,
+            physics: const NeverScrollableScrollPhysics(),
+            itemCount: 5,
+            itemBuilder: (context, index) => const PopularRestaurantCard(),
+          ),
         ],
       ),
     );

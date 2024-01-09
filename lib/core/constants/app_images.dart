@@ -65,9 +65,9 @@ class Assets {
   /// assets/images/google.svg
   static const String assetsImagesGoogle = "assets/images/google.svg";
 
-  /// Assets for assetsImagesHealtyResto
-  /// assets/images/healty_resto.png
-  static const String assetsImagesHealtyResto = "assets/images/healty_resto.png";
+  /// Assets for assetsImagesGreenNoddle
+  /// assets/images/green_noddle.png
+  static const String assetsImagesGreenNoddle = "assets/images/green_noddle.png";
 
   /// Assets for assetsImagesHidePassIcon
   /// assets/images/hide_pass_icon.svg

@@ -37,7 +37,7 @@ class AppTheme {
     primaryColor: AppColors.green,
     hintColor: AppColors.orange,
     disabledColor: Colors.black,
-    hoverColor: Colors.grey.withOpacity(0.1),
+    hoverColor: Colors.grey[900],
     textTheme: TextTheme(
       labelSmall: TextStyle(
         fontSize: 13.sp,

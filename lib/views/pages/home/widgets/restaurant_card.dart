@@ -13,7 +13,6 @@ class RestaurantCard extends StatelessWidget {
     return Container(
       height: context.height * 0.24,
       width: context.width * 0.4,
-      margin: EdgeInsets.symmetric(horizontal: 8.w),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(16.r),
         color: context.theme.hoverColor,

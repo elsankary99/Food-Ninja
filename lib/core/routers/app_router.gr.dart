@@ -33,6 +33,12 @@ abstract class _$AppRouter extends RootStackRouter {
         child: const LoginPage(),
       );
     },
+    NearestRestaurantRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const NearestRestaurantPage(),
+      );
+    },
     OnBoardingRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
@@ -43,6 +49,12 @@ abstract class _$AppRouter extends RootStackRouter {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
         child: const PaymentMethodPage(),
+      );
+    },
+    PopularMenuRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const PopularMenuPage(),
       );
     },
     ResetPasswordRoute.name: (routeData) {
@@ -127,6 +139,20 @@ class LoginRoute extends PageRouteInfo<void> {
 }
 
 /// generated route for
+/// [NearestRestaurantPage]
+class NearestRestaurantRoute extends PageRouteInfo<void> {
+  const NearestRestaurantRoute({List<PageRouteInfo>? children})
+      : super(
+          NearestRestaurantRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'NearestRestaurantRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
 /// [OnBoardingPage]
 class OnBoardingRoute extends PageRouteInfo<void> {
   const OnBoardingRoute({List<PageRouteInfo>? children})
@@ -150,6 +176,20 @@ class PaymentMethodRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'PaymentMethodRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [PopularMenuPage]
+class PopularMenuRoute extends PageRouteInfo<void> {
+  const PopularMenuRoute({List<PageRouteInfo>? children})
+      : super(
+          PopularMenuRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'PopularMenuRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
 }

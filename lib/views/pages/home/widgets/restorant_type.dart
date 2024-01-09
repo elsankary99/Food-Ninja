@@ -22,7 +22,7 @@ class ResonantType extends StatelessWidget {
           style: context.textTheme.labelMedium!.copyWith(fontSize: 16.sp),
         ),
         InkWell(
-          onTap: () {},
+          onTap: onTap,
           splashColor: AppColors.lightOrange,
           child: Text(
             AppStrings.viewMore,

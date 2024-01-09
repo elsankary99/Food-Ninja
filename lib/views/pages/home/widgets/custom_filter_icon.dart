@@ -14,7 +14,7 @@ class CustomFilterIcon extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
-      splashColor: AppColors.lightOrange,
+      splashColor: AppColors.lightOrange.withOpacity(0.25),
       child: Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(

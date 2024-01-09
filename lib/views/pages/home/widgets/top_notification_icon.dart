@@ -26,13 +26,12 @@ class TopNotificationIcon extends StatelessWidget {
           child: Container(
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
-              color: Theme.of(context).disabledColor,
+              color: context.theme.hoverColor,
               borderRadius: BorderRadius.circular(16.r),
               boxShadow: [
                 BoxShadow(
-                  color: Colors.grey.withOpacity(0.5),
-                  blurRadius: 3,
-                  spreadRadius: 0.1,
+                  color: Colors.grey.withOpacity(0.6),
+                  blurRadius: 1,
                 )
               ],
             ),
