@@ -9,15 +9,16 @@ import 'package:food_ninja/core/extensions/extensions.dart';
 class TopNotificationIcon extends StatelessWidget {
   const TopNotificationIcon({
     super.key,
+    this.title,
   });
-
+  final String? title;
   @override
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         Text(
-          AppStrings.findYourFavoriteFood,
+          title ?? AppStrings.findYourFavoriteFood,
           style: context.textTheme.labelLarge!.copyWith(fontSize: 26.sp),
         ),
         InkWell(

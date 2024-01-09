@@ -89,6 +89,10 @@ class Assets {
   /// assets/images/Icon_search.svg
   static const String assetsImagesIconSearch = "assets/images/Icon_search.svg";
 
+  /// Assets for assetsImagesIconSend
+  /// assets/images/Icon_send.svg
+  static const String assetsImagesIconSend = "assets/images/Icon_send.svg";
+
   /// Assets for assetsImagesLocationIcon
   /// assets/images/location_icon.svg
   static const String assetsImagesLocationIcon = "assets/images/location_icon.svg";

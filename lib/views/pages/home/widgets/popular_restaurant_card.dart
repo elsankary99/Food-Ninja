@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:food_ninja/core/constants/app_colors.dart';
 import 'package:food_ninja/core/constants/app_images.dart';
 import 'package:food_ninja/core/extensions/extensions.dart';
 
@@ -44,7 +45,16 @@ class PopularRestaurantCard extends StatelessWidget {
                 ),
               ),
             ],
-          )
+          ),
+          const Spacer(),
+          Text(
+            '\$7',
+            style: context.textTheme.labelLarge!.copyWith(
+              color: AppColors.lightOrange,
+              fontSize: 22.sp,
+            ),
+          ),
+          SizedBox(width: 10.w),
         ],
       ),
     );

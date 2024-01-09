@@ -1,6 +1,7 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:food_ninja/views/pages/auth/login/login_page.dart';
 import 'package:food_ninja/views/pages/auth/reset_password/reset_password_page.dart';
+import 'package:food_ninja/views/pages/chat/chat_page.dart';
 import 'package:food_ninja/views/pages/created_successfully/created_successfully_page.dart';
 import 'package:food_ninja/views/pages/home/initial_page.dart';
 import 'package:food_ninja/views/pages/nearest_restaurant/nearest_restaurant_page.dart';
@@ -36,5 +37,6 @@ class AppRouter extends _$AppRouter {
         AutoRoute(page: InitialRoute.page),
         AutoRoute(page: NearestRestaurantRoute.page),
         AutoRoute(page: PopularMenuRoute.page),
+        AutoRoute(page: ChatRoute.page),
       ];
 }
