@@ -1,10 +1,11 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:food_ninja/core/constants/app_colors.dart';
 import 'package:food_ninja/core/constants/app_images.dart';
 import 'package:food_ninja/core/constants/app_strings.dart';
 import 'package:food_ninja/core/extensions/extensions.dart';
+import 'package:food_ninja/core/routers/app_router.dart';
 
 class TopNotificationIcon extends StatelessWidget {
   const TopNotificationIcon({
@@ -22,8 +23,8 @@ class TopNotificationIcon extends StatelessWidget {
           style: context.textTheme.labelLarge!.copyWith(fontSize: 26.sp),
         ),
         InkWell(
-          onTap: () {},
-          splashColor: AppColors.green,
+          onTap: () => context.router.push(const NotificationRoute()),
+          overlayColor: MaterialStateProperty.all(Colors.transparent),
           child: Container(
             padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
@@ -33,7 +34,7 @@ class TopNotificationIcon extends StatelessWidget {
                 BoxShadow(
                   color: Colors.grey.withOpacity(0.6),
                   blurRadius: 1,
-                )
+                ),
               ],
             ),
             child: SvgPicture.asset(
@@ -41,7 +42,7 @@ class TopNotificationIcon extends StatelessWidget {
               width: 19.sp,
             ),
           ),
-        )
+        ),
       ],
     );
   }

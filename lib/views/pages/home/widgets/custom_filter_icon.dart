@@ -6,15 +6,15 @@ import 'package:food_ninja/core/constants/app_images.dart';
 
 class CustomFilterIcon extends StatelessWidget {
   const CustomFilterIcon({
-    super.key,
     required this.onTap,
+    super.key,
   });
   final VoidCallback onTap;
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onTap,
-      splashColor: AppColors.lightOrange.withOpacity(0.25),
+      overlayColor: MaterialStateProperty.all(Colors.transparent),
       child: Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(

@@ -46,12 +46,13 @@ class _ChatPageState extends State<ChatPage> {
                   left: 0,
                   right: 0,
                   child: CustomTextFormField(
-                    hint: "Message",
+                    hint: 'Message',
                     suffixIcon: IconButton(
-                        onPressed: () {},
-                        icon: SvgPicture.asset(Assets.assetsImagesIconSend)),
+                      onPressed: () {},
+                      icon: SvgPicture.asset(Assets.assetsImagesIconSend),
+                    ),
                   ),
-                )
+                ),
               ],
             ),
           ),

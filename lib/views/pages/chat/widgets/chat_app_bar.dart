@@ -25,10 +25,11 @@ class ChatAppBar extends StatelessWidget {
               decoration: const BoxDecoration(
                 shape: BoxShape.circle,
                 image: DecorationImage(
-                    image: NetworkImage(
-                      "https://s3-alpha-sig.figma.com/img/d225/a080/66427d0d5f06284a4fd49d3538d49672?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LhDO4tHIr-gqc4q3nTvVa8PDLQ9IkzwZKa8kcFJn89H-DJOnH0Gj3nhK-HZd7pD2LzBX~o0fLLFWxwJEFzqz8x7JsDdQBLQ2zwSNeBkTrMEHF0tKIqFZvcxj1qXmmcamXDCvxMqDSGttEGe22ro4Fx~ZpHYL7M3-IN89ugF2k-UkKIEndKNsQeDEVpV7Nu36V98GLthIaRXa16BkJqF4U~3xKRXVUFCImZl2VUVxNyFeTLEF5sRvL0W29TYI-FOgpOyKbO0CkntQuaHS4~zcoH2blrXKFDGxPRS8NDYKUaYX~IWebr5TOCamrfyPuiKE4vDShUGh05OuYPJN8i19lw__",
-                    ),
-                    fit: BoxFit.cover),
+                  image: NetworkImage(
+                    'https://s3-alpha-sig.figma.com/img/d225/a080/66427d0d5f06284a4fd49d3538d49672?Expires=1705881600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LhDO4tHIr-gqc4q3nTvVa8PDLQ9IkzwZKa8kcFJn89H-DJOnH0Gj3nhK-HZd7pD2LzBX~o0fLLFWxwJEFzqz8x7JsDdQBLQ2zwSNeBkTrMEHF0tKIqFZvcxj1qXmmcamXDCvxMqDSGttEGe22ro4Fx~ZpHYL7M3-IN89ugF2k-UkKIEndKNsQeDEVpV7Nu36V98GLthIaRXa16BkJqF4U~3xKRXVUFCImZl2VUVxNyFeTLEF5sRvL0W29TYI-FOgpOyKbO0CkntQuaHS4~zcoH2blrXKFDGxPRS8NDYKUaYX~IWebr5TOCamrfyPuiKE4vDShUGh05OuYPJN8i19lw__',
+                  ),
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
             SizedBox(width: 16.w),
@@ -37,7 +38,7 @@ class ChatAppBar extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "Guy Hawkins",
+                  'Guy Hawkins',
                   style: context.textTheme.labelMedium!.copyWith(
                     fontSize: 16.sp,
                   ),
@@ -52,11 +53,12 @@ class ChatAppBar extends StatelessWidget {
                     ),
                     SizedBox(width: 6.w),
                     Text(
-                      "Online",
+                      'Online',
                       style: context.textTheme.labelSmall!.copyWith(
-                          fontSize: 14.sp,
-                          color: Colors.grey,
-                          fontWeight: FontWeight.w600),
+                        fontSize: 14.sp,
+                        color: Colors.grey,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
                   ],
                 ),
@@ -68,7 +70,7 @@ class ChatAppBar extends StatelessWidget {
         Divider(
           thickness: 1.5,
           color: Colors.grey.withOpacity(0.5),
-        )
+        ),
       ],
     );
   }

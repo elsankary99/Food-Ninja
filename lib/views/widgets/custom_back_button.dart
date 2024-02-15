@@ -1,7 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:food_ninja/core/constants/app_colors.dart';
 import 'package:food_ninja/core/constants/app_images.dart';
 
 class CustomBackButton extends StatelessWidget {
@@ -10,7 +9,7 @@ class CustomBackButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      splashColor: AppColors.lightOrange.withOpacity(0.25),
+      overlayColor: MaterialStateProperty.all(Colors.transparent),
       onTap: () => context.router.pop(),
       child: SizedBox(
         child: SvgPicture.asset(Assets.assetsImagesBackButton),

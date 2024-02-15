@@ -26,7 +26,15 @@ class HomeTap extends StatelessWidget {
           Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              const Expanded(child: CustomSearchField()),
+              Expanded(
+                child: InkWell(
+                  overlayColor: MaterialStateProperty.all(Colors.transparent),
+                  onTap: () => context.router.push(const SearchRoute()),
+                  child: const CustomSearchField(
+                    enabled: false,
+                  ),
+                ),
+              ),
               const SizedBox(width: 16),
               CustomFilterIcon(onTap: () {}),
             ],
