@@ -3,8 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:food_ninja/core/constants/app_colors.dart';
 import 'package:food_ninja/core/extensions/extensions.dart';
 
-class CustomButton extends StatelessWidget {
-  const CustomButton({
+class OrderButton extends StatelessWidget {
+  const OrderButton({
     required this.onTap,
     required this.title,
     super.key,
@@ -20,20 +20,13 @@ class CustomButton extends StatelessWidget {
         alignment: Alignment.center,
         padding: EdgeInsets.symmetric(horizontal: 40.w, vertical: 14.h),
         decoration: BoxDecoration(
+          color: Colors.white,
           borderRadius: BorderRadius.circular(14),
-          gradient: const LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [
-              AppColors.green,
-              AppColors.deepGreen,
-            ],
-          ),
         ),
         child: Text(
           title,
           style: context.textTheme.labelMedium!
-              .copyWith(color: Colors.white, fontSize: 16.sp),
+              .copyWith(color: AppColors.green, fontSize: 16.sp),
         ),
       ),
     );
