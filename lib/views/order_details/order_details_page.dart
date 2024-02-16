@@ -2,6 +2,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:food_ninja/core/extensions/extensions.dart';
+import 'package:food_ninja/views/order_details/widgets/order_card.dart';
 import 'package:food_ninja/views/order_details/widgets/prices_card.dart';
 import 'package:food_ninja/views/widgets/background_image.dart';
 import 'package:food_ninja/views/widgets/custom_back_button.dart';
@@ -26,7 +27,12 @@ class OrderDetailsPage extends StatelessWidget {
                   'Order details',
                   style: context.textTheme.labelMedium,
                 ),
-                Expanded(child: ListView()),
+                Expanded(
+                  child: ListView.builder(
+                    itemCount: 10,
+                    itemBuilder: (context, index) => const OrderCard(),
+                  ),
+                ),
                 const PricesCard(),
               ],
             ),
