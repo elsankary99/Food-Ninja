@@ -1,6 +1,8 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:food_ninja/core/constants/app_colors.dart';
 import 'package:food_ninja/core/extensions/extensions.dart';
 import 'package:food_ninja/views/order_details/widgets/order_card.dart';
 import 'package:food_ninja/views/order_details/widgets/prices_card.dart';
@@ -30,7 +32,28 @@ class OrderDetailsPage extends StatelessWidget {
                 Expanded(
                   child: ListView.builder(
                     itemCount: 10,
-                    itemBuilder: (context, index) => const OrderCard(),
+                    itemBuilder: (context, index) => Dismissible(
+                      direction: DismissDirection.endToStart,
+                      key: Key(index.toString()),
+                      background: Container(
+                        alignment: AlignmentDirectional.centerEnd,
+                        padding: const EdgeInsetsDirectional.only(end: 20),
+                        decoration: const BoxDecoration(
+                          color: AppColors.orange,
+                          borderRadius: BorderRadiusDirectional.horizontal(
+                            end: Radius.circular(15),
+                          ),
+                        ),
+                        child: IconButton(
+                          onPressed: () {},
+                          icon: const Icon(
+                            FontAwesomeIcons.trashCan,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                      child: const OrderCard(),
+                    ),
                   ),
                 ),
                 const PricesCard(),
