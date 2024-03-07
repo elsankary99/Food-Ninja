@@ -37,19 +37,16 @@ class OrderDetailsPage extends StatelessWidget {
                       key: Key(index.toString()),
                       background: Container(
                         alignment: AlignmentDirectional.centerEnd,
-                        padding: const EdgeInsetsDirectional.only(end: 20),
+                        padding: EdgeInsetsDirectional.only(end: 28.w),
                         decoration: const BoxDecoration(
                           color: AppColors.orange,
                           borderRadius: BorderRadiusDirectional.horizontal(
                             end: Radius.circular(15),
                           ),
                         ),
-                        child: IconButton(
-                          onPressed: () {},
-                          icon: const Icon(
-                            FontAwesomeIcons.trashCan,
-                            color: Colors.white,
-                          ),
+                        child: const Icon(
+                          FontAwesomeIcons.trashCan,
+                          color: Colors.white,
                         ),
                       ),
                       child: const OrderCard(),

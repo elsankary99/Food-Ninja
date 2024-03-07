@@ -5,6 +5,7 @@ import 'package:food_ninja/views/pages/auth/reset_password/reset_password_page.d
 import 'package:food_ninja/views/pages/chat/chat_page.dart';
 import 'package:food_ninja/views/pages/created_successfully/created_successfully_page.dart';
 import 'package:food_ninja/views/pages/home/initial_page.dart';
+import 'package:food_ninja/views/pages/map/map_page.dart';
 import 'package:food_ninja/views/pages/nearest_restaurant/nearest_restaurant_page.dart';
 import 'package:food_ninja/views/pages/notification/notification_page.dart';
 import 'package:food_ninja/views/pages/onboarding/onboarding_page.dart';
@@ -43,6 +44,8 @@ class AppRouter extends _$AppRouter {
         AutoRoute(page: ChatRoute.page),
         AutoRoute(page: NotificationRoute.page),
         AutoRoute(page: SearchRoute.page),
-        AutoRoute(page: OrderDetailsRoute.page, initial: true),
+        AutoRoute(page: OrderDetailsRoute.page),
+        //?Others
+        AutoRoute(page: MapRoute.page, initial: true),
       ];
 }

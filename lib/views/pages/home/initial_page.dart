@@ -42,17 +42,18 @@ class _InitialPageState extends State<InitialPage>
         ),
         child: SafeArea(
           child: Padding(
-              padding: EdgeInsets.symmetric(horizontal: 16.w),
-              child: TabBarView(
-                physics: const NeverScrollableScrollPhysics(),
-                controller: controller,
-                children: const [
-                  HomeTap(),
-                  ProfileTap(),
-                  CartTap(),
-                  ChatTap(),
-                ],
-              )),
+            padding: EdgeInsets.symmetric(horizontal: 16.w),
+            child: TabBarView(
+              physics: const NeverScrollableScrollPhysics(),
+              controller: controller,
+              children: const [
+                HomeTap(),
+                ProfileTap(),
+                CartTap(),
+                ChatTap(),
+              ],
+            ),
+          ),
         ),
       ),
       bottomNavigationBar: SafeArea(
@@ -60,19 +61,22 @@ class _InitialPageState extends State<InitialPage>
           padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 10.h),
           margin: const EdgeInsets.all(12),
           decoration: BoxDecoration(
-              color: Theme.of(context).hoverColor,
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.grey.withOpacity(0.4),
-                  blurStyle: BlurStyle.outer,
-                  blurRadius: 3,
-                  spreadRadius: 0.1,
-                )
-              ],
-              borderRadius: BorderRadius.circular(15)),
-          child: CustomBottomSheet(onChanged: (value) {
-            setState(() => controller.animateTo(value));
-          }),
+            color: Theme.of(context).hoverColor,
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.withOpacity(0.4),
+                blurStyle: BlurStyle.outer,
+                blurRadius: 3,
+                spreadRadius: 0.1,
+              ),
+            ],
+            borderRadius: BorderRadius.circular(15),
+          ),
+          child: CustomBottomSheet(
+            onChanged: (value) {
+              setState(() => controller.animateTo(value));
+            },
+          ),
         ),
       ),
     );
