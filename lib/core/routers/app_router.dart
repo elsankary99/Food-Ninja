@@ -26,7 +26,7 @@ final router = AppRouter();
 class AppRouter extends _$AppRouter {
   @override
   List<AutoRoute> get routes => [
-        AutoRoute(page: SplashRoute.page),
+        AutoRoute(page: SplashRoute.page, initial: true),
         AutoRoute(page: OnBoardingRoute.page),
         //?Auth
         AutoRoute(page: LoginRoute.page),
@@ -46,6 +46,6 @@ class AppRouter extends _$AppRouter {
         AutoRoute(page: SearchRoute.page),
         AutoRoute(page: OrderDetailsRoute.page),
         //?Others
-        AutoRoute(page: MapRoute.page, initial: true),
+        AutoRoute(page: MapRoute.page),
       ];
 }

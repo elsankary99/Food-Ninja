@@ -17,7 +17,7 @@ class BottomSheetIcon {
 }
 
 class CustomBottomSheet extends StatefulWidget {
-  const CustomBottomSheet({super.key, required this.onChanged});
+  const CustomBottomSheet({required this.onChanged, super.key});
   final ValueChanged<int> onChanged;
   @override
   State<CustomBottomSheet> createState() => _CustomBottomSheetState();
@@ -61,8 +61,9 @@ class _CustomBottomSheetState extends State<CustomBottomSheet> {
               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
               duration: const Duration(milliseconds: 350),
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8.r),
-                  color: equal ? AppColors.green.withOpacity(0.15) : null),
+                borderRadius: BorderRadius.circular(8.r),
+                color: equal ? AppColors.green.withOpacity(0.15) : null,
+              ),
               child: AnimatedContainer(
                 duration: const Duration(seconds: 1),
                 child: Row(
@@ -71,16 +72,18 @@ class _CustomBottomSheetState extends State<CustomBottomSheet> {
                       data.icon,
                       width: 28.sp,
                     ),
-                    if (equal) ...[
-                      const SizedBox(width: 6),
-                      Text(
-                        data.name,
-                        style: context.textTheme.labelMedium!.copyWith(
-                          fontSize: 14.sp,
-                          fontWeight: FontWeight.w600,
-                        ),
+                    const SizedBox(width: 6),
+                    AnimatedDefaultTextStyle(
+                      curve: Curves.easeInOut,
+                      duration: const Duration(milliseconds: 350),
+                      style: context.textTheme.labelMedium!.copyWith(
+                        fontSize: equal ? 14.sp : 0,
+                        fontWeight: FontWeight.w600,
                       ),
-                    ]
+                      child: Text(
+                        data.name,
+                      ),
+                    ),
                   ],
                 ),
               ),
