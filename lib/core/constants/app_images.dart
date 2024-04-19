@@ -45,6 +45,10 @@ class Assets {
   /// assets/images/current_location.svg
   static const String assetsImagesCurrentLocation = "assets/images/current_location.svg";
 
+  /// Assets for assetsImagesEditIcon
+  /// assets/images/edit_icon.svg
+  static const String assetsImagesEditIcon = "assets/images/edit_icon.svg";
+
   /// Assets for assetsImagesEmailIcon
   /// assets/images/email_icon.svg
   static const String assetsImagesEmailIcon = "assets/images/email_icon.svg";

@@ -17,8 +17,9 @@ class HomeTap extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
+    return SafeArea(
+      child: ListView(
+        padding: EdgeInsets.symmetric(horizontal: 16.w),
         children: [
           SizedBox(height: 4.h),
           const TopNotificationIcon(),
