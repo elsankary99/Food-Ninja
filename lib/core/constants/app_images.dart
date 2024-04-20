@@ -177,6 +177,10 @@ class Assets {
   /// assets/images/visa.png
   static const String assetsImagesVisa = "assets/images/visa.png";
 
+  /// Assets for assetsImagesVoucherIcon
+  /// assets/images/voucher_icon.svg
+  static const String assetsImagesVoucherIcon = "assets/images/voucher_icon.svg";
+
   /// Assets for assetsImagesWomenChef2
   /// assets/images/women_chef_2.png
   static const String assetsImagesWomenChef2 = "assets/images/women_chef_2.png";

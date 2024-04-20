@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:food_ninja/core/constants/app_colors.dart';
 import 'package:food_ninja/core/constants/app_images.dart';
 import 'package:food_ninja/core/extensions/extensions.dart';
 import 'package:food_ninja/views/pages/home/widgets/custom_horizontal_line.dart';
 import 'package:food_ninja/views/pages/home/widgets/member_type.dart';
+import 'package:food_ninja/views/pages/home/widgets/user_info_section.dart';
+import 'package:food_ninja/views/pages/home/widgets/voucher_card.dart';
+import 'package:food_ninja/views/widgets/custom_card.dart';
 
 class ProfileTap extends StatelessWidget {
   const ProfileTap({super.key});
@@ -38,38 +41,17 @@ class ProfileTap extends StatelessWidget {
                   children: [
                     const CustomHorizontalLine(),
                     const MemberType(),
-                    const SizedBox(height: 22),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Text(
-                              'Ahmed Ebrahim',
-                              style: context.textTheme.headlineMedium!.copyWith(
-                                fontWeight: FontWeight.bold,
-                                color: context.theme.canvasColor,
-                              ),
-                            ),
-                            InkWell(
-                              child: SvgPicture.asset(
-                                Assets.assetsImagesEditIcon,
-                                width: 28,
-                              ),
-                              onTap: () {},
-                            ),
-                          ],
-                        ),
-                        const SizedBox(height: 10),
-                        Text(
-                          'elsankary@gmail.com',
-                          style: context.textTheme.bodyMedium!.copyWith(
-                            fontWeight: FontWeight.bold,
-                            color: Colors.grey[700],
-                          ),
-                        ),
-                      ],
+                    SizedBox(height: 20.h),
+                    const UserInformationSection(),
+                    SizedBox(height: 20.h),
+                    const VoucherCard(),
+                    SizedBox(height: 14.h),
+                    Text(
+                      'Favorite',
+                      style: context.textTheme.bodyLarge!.copyWith(
+                        fontWeight: FontWeight.bold,
+                        color: context.theme.canvasColor,
+                      ),
                     ),
                   ],
                 ),
