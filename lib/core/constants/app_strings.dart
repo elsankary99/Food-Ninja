@@ -68,7 +68,11 @@ class AppStrings {
   static const String notification = 'Notification';
 
   static const String heroTextField = 'heroTextField';
-  // static const String f = "";
+  static const String restaurantParagraph = '''
+Most whole Alaskan Red King Crabs get broken down into
+legs, claws, and lump meat. We offer all of these options
+as well in our online shop, but there is nothing like getting
+the whole . . . .''';
   // static const String f = "";
   // static const String f = "";
   // static const String f = "";

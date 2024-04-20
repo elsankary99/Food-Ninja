@@ -7,17 +7,13 @@ import 'package:food_ninja/core/constants/app_strings.dart';
 import 'package:food_ninja/core/extensions/extensions.dart';
 import 'package:food_ninja/core/routers/app_router.dart';
 import 'package:food_ninja/views/pages/home/widgets/custom_horizontal_line.dart';
-import 'package:food_ninja/views/pages/home/widgets/favorite_card.dart';
 import 'package:food_ninja/views/pages/home/widgets/member_type.dart';
 import 'package:food_ninja/views/pages/home/widgets/restorant_type.dart';
-import 'package:food_ninja/views/pages/home/widgets/user_info_section.dart';
-import 'package:food_ninja/views/pages/home/widgets/voucher_card.dart';
+import 'package:food_ninja/views/pages/restaurant/widgets/icon_and_text.dart';
+import 'package:food_ninja/views/pages/restaurant/widgets/popular_restaurant_menu_card.dart';
+import 'package:food_ninja/views/pages/restaurant/widgets/testimonials_card.dart';
 import 'package:food_ninja/views/widgets/custom_back_button.dart';
 import 'package:food_ninja/views/widgets/warb_color.dart';
-
-import 'package:food_ninja/views/pages/restaurant/widgets/icon_and_text.dart';
-
-import 'package:food_ninja/views/pages/restaurant/widgets/popular_restaurant_menu_card.dart';
 
 @RoutePage()
 class RestaurantPage extends StatelessWidget {
@@ -30,7 +26,7 @@ class RestaurantPage extends StatelessWidget {
         children: [
           Container(
             height: context.height * 0.46,
-            color: Colors.black,
+            color: Colors.white,
           ),
           PositionedDirectional(
             start: 18.w,
@@ -98,6 +94,13 @@ class RestaurantPage extends StatelessWidget {
                         ],
                       ),
                       SizedBox(height: 14.h),
+                      Text(
+                        AppStrings.restaurantParagraph,
+                        style: context.textTheme.labelMedium!.copyWith(
+                          color: context.theme.canvasColor.withOpacity(0.6),
+                        ),
+                      ),
+                      SizedBox(height: 10.h),
                       ResonantType(
                         title: AppStrings.popularMenu,
                         onTap: () =>
@@ -114,6 +117,21 @@ class RestaurantPage extends StatelessWidget {
                           itemBuilder: (context, index) =>
                               const PopularRestaurantMenuCard(),
                         ),
+                      ),
+                      SizedBox(height: 14.h),
+                      Text(
+                        'Testimonials',
+                        style: context.textTheme.titleMedium!
+                            .copyWith(color: context.theme.canvasColor),
+                      ),
+                      ListView.separated(
+                        padding: EdgeInsets.zero,
+                        shrinkWrap: true,
+                        physics: const NeverScrollableScrollPhysics(),
+                        separatorBuilder: (_, __) => SizedBox(height: 12.h),
+                        itemCount: 10,
+                        itemBuilder: (context, index) =>
+                            const TestimonialsCard(),
                       ),
                     ],
                   ),
