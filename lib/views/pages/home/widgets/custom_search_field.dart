@@ -31,7 +31,7 @@ class CustomSearchField extends StatelessWidget {
             vertical: 14.h,
           ),
           hintText: AppStrings.whatDoYouWantToOrder,
-          hintStyle: context.textTheme.labelSmall!.copyWith(
+          hintStyle: context.textTheme.labelMedium!.copyWith(
             color: AppColors.lightOrange,
           ),
           prefixIcon: UnconstrainedBox(

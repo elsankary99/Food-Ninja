@@ -50,8 +50,10 @@ class NearestRestaurantPage extends StatelessWidget {
                   alignment: Alignment.centerLeft,
                   child: Text(
                     AppStrings.nearestRestaurant,
-                    style: context.textTheme.labelMedium!
-                        .copyWith(fontSize: 16.sp),
+                    style: context.textTheme.titleMedium!.copyWith(
+                      color: context.theme.canvasColor,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
 
@@ -60,10 +62,11 @@ class NearestRestaurantPage extends StatelessWidget {
                   child: GridView.builder(
                     itemCount: 15,
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 2,
-                        childAspectRatio: 1 / 1.3,
-                        mainAxisSpacing: 10.h,
-                        crossAxisSpacing: 12.w),
+                      crossAxisCount: 2,
+                      childAspectRatio: 1 / 1.3,
+                      mainAxisSpacing: 10.h,
+                      crossAxisSpacing: 12.w,
+                    ),
                     itemBuilder: (context, index) => const RestaurantCard(),
                   ),
                 ),

@@ -55,7 +55,9 @@ class HomeTap extends StatelessWidget {
               itemCount: 5,
               itemBuilder: (context, index) => Padding(
                 padding: EdgeInsets.symmetric(horizontal: 8.w),
-                child: const RestaurantCard(),
+                child: RestaurantCard(
+                  onTap: () {},
+                ),
               ),
             ),
           ),

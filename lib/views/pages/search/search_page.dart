@@ -43,8 +43,9 @@ class SearchPage extends StatelessWidget {
                     SizedBox(height: 16.h),
                     Text(
                       'Type',
-                      style: context.textTheme.labelMedium!
-                          .copyWith(fontSize: 16.sp),
+                      style: context.textTheme.titleMedium!.copyWith(
+                        color: context.theme.canvasColor,
+                      ),
                     ),
                     SizedBox(height: 16.h),
                     const SearchTypeCard(title: 'Restaurant'),
@@ -57,13 +58,15 @@ class SearchPage extends StatelessWidget {
                     ),
                     Text(
                       'Location',
-                      style: context.textTheme.labelMedium!
-                          .copyWith(fontSize: 16.sp),
+                      style: context.textTheme.titleMedium!.copyWith(
+                        color: context.theme.canvasColor,
+                      ),
                     ),
                     Text(
                       'Food',
-                      style: context.textTheme.labelMedium!
-                          .copyWith(fontSize: 16.sp),
+                      style: context.textTheme.titleMedium!.copyWith(
+                        color: context.theme.canvasColor,
+                      ),
                     ),
                     SizedBox(height: 35.h),
                     SizedBox(

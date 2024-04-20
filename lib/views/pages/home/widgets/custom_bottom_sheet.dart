@@ -78,6 +78,7 @@ class _CustomBottomSheetState extends State<CustomBottomSheet> {
                       duration: const Duration(milliseconds: 350),
                       style: context.textTheme.labelMedium!.copyWith(
                         fontSize: equal ? 14.sp : 0,
+                        color: context.theme.canvasColor,
                         fontWeight: FontWeight.w600,
                       ),
                       child: Text(

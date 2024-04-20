@@ -20,7 +20,10 @@ class TopNotificationIcon extends StatelessWidget {
       children: [
         Text(
           title ?? AppStrings.findYourFavoriteFood,
-          style: context.textTheme.labelLarge!.copyWith(fontSize: 26.sp),
+          style: context.textTheme.headlineLarge!.copyWith(
+            color: context.theme.canvasColor,
+            fontWeight: FontWeight.bold,
+          ),
         ),
         InkWell(
           onTap: () => context.router.push(const NotificationRoute()),

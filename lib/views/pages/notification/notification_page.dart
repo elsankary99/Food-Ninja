@@ -27,16 +27,21 @@ class NotificationPage extends StatelessWidget {
         child: SafeArea(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 16.w),
-            child:
-                Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              SizedBox(height: 10.h),
-              const CustomBackButton(),
-              SizedBox(height: 14.h),
-              Text(
-                AppStrings.notification,
-                style: context.textTheme.labelLarge!.copyWith(fontSize: 24.sp),
-              ),
-            ]),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SizedBox(height: 10.h),
+                const CustomBackButton(),
+                SizedBox(height: 14.h),
+                Text(
+                  AppStrings.notification,
+                  style: context.textTheme.headlineMedium!.copyWith(
+                    color: context.theme.canvasColor,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),

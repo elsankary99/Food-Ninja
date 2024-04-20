@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/svg.dart';
-import 'package:food_ninja/core/constants/app_images.dart';
 import 'package:food_ninja/core/extensions/extensions.dart';
 import 'package:food_ninja/views/pages/home/widgets/custom_horizontal_line.dart';
+import 'package:food_ninja/views/pages/home/widgets/favorite_card.dart';
 import 'package:food_ninja/views/pages/home/widgets/member_type.dart';
 import 'package:food_ninja/views/pages/home/widgets/user_info_section.dart';
 import 'package:food_ninja/views/pages/home/widgets/voucher_card.dart';
-import 'package:food_ninja/views/widgets/custom_card.dart';
 
 class ProfileTap extends StatelessWidget {
   const ProfileTap({super.key});
@@ -52,6 +50,15 @@ class ProfileTap extends StatelessWidget {
                         fontWeight: FontWeight.bold,
                         color: context.theme.canvasColor,
                       ),
+                    ),
+                    SizedBox(height: 14.h),
+                    ListView.separated(
+                      padding: EdgeInsets.zero,
+                      separatorBuilder: (_, __) => SizedBox(height: 8.h),
+                      shrinkWrap: true,
+                      physics: const NeverScrollableScrollPhysics(),
+                      itemCount: 10,
+                      itemBuilder: (context, index) => const FavoriteCard(),
                     ),
                   ],
                 ),

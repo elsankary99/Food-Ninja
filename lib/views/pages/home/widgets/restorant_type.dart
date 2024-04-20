@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:food_ninja/core/constants/app_colors.dart';
 import 'package:food_ninja/core/constants/app_strings.dart';
 import 'package:food_ninja/core/extensions/extensions.dart';
 
 class ResonantType extends StatelessWidget {
   const ResonantType({
-    super.key,
     required this.title,
     required this.onTap,
+    super.key,
   });
   final VoidCallback onTap;
   final String title;
@@ -19,17 +18,20 @@ class ResonantType extends StatelessWidget {
       children: [
         Text(
           title,
-          style: context.textTheme.labelMedium!.copyWith(fontSize: 16.sp),
+          style: context.textTheme.titleMedium!
+              .copyWith(color: context.theme.canvasColor),
         ),
         InkWell(
           onTap: onTap,
           splashColor: AppColors.lightOrange,
           child: Text(
             AppStrings.viewMore,
-            style: context.textTheme.labelSmall!
-                .copyWith(color: AppColors.orange, fontWeight: FontWeight.w600),
+            style: context.textTheme.labelMedium!.copyWith(
+              color: AppColors.orange,
+              fontWeight: FontWeight.w600,
+            ),
           ),
-        )
+        ),
       ],
     );
   }

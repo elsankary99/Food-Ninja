@@ -31,16 +31,15 @@ class PopularRestaurantCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Green Noddle",
-                style: context.textTheme.labelMedium!.copyWith(
-                  fontSize: 16.sp,
+                'Green Noddle',
+                style: context.textTheme.titleMedium!.copyWith(
+                  color: context.theme.canvasColor,
                 ),
               ),
               SizedBox(height: 6.h),
               Text(
-                "Noddle Home",
-                style: context.textTheme.labelSmall!.copyWith(
-                  fontSize: 13.sp,
+                'Noddle Home',
+                style: context.textTheme.labelLarge!.copyWith(
                   color: Colors.grey,
                 ),
               ),
@@ -49,9 +48,9 @@ class PopularRestaurantCard extends StatelessWidget {
           const Spacer(),
           Text(
             '\$7',
-            style: context.textTheme.labelLarge!.copyWith(
+            style: context.textTheme.titleLarge!.copyWith(
               color: AppColors.lightOrange,
-              fontSize: 22.sp,
+              fontWeight: FontWeight.bold,
             ),
           ),
           SizedBox(width: 10.w),
