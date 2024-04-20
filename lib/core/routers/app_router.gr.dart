@@ -87,6 +87,12 @@ abstract class _$AppRouter extends RootStackRouter {
         child: const ResetPasswordPage(),
       );
     },
+    RestaurantRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const RestaurantPage(),
+      );
+    },
     SearchRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
@@ -290,6 +296,20 @@ class ResetPasswordRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'ResetPasswordRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [RestaurantPage]
+class RestaurantRoute extends PageRouteInfo<void> {
+  const RestaurantRoute({List<PageRouteInfo>? children})
+      : super(
+          RestaurantRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'RestaurantRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
 }

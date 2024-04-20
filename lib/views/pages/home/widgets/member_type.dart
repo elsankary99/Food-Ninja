@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:food_ninja/core/constants/app_colors.dart';
 import 'package:food_ninja/core/extensions/extensions.dart';
 
 class MemberType extends StatelessWidget {
+  final Color color;
+  final String title;
   const MemberType({
+    required this.title,
+    required this.color,
     super.key,
   });
 
@@ -15,14 +18,14 @@ class MemberType extends StatelessWidget {
         vertical: 10,
       ),
       decoration: BoxDecoration(
-        color: AppColors.lightOrange.withOpacity(0.1),
+        color: color.withOpacity(0.1),
         borderRadius: BorderRadius.circular(19),
       ),
       child: Text(
-        'Member Gold',
+        title,
         style: context.textTheme.bodyMedium!.copyWith(
           fontWeight: FontWeight.bold,
-          color: AppColors.lightOrange,
+          color: color,
         ),
       ),
     );

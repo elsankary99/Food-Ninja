@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:food_ninja/core/constants/app_colors.dart';
 import 'package:food_ninja/core/extensions/extensions.dart';
 import 'package:food_ninja/views/pages/home/widgets/custom_horizontal_line.dart';
 import 'package:food_ninja/views/pages/home/widgets/favorite_card.dart';
@@ -38,7 +39,10 @@ class ProfileTap extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const CustomHorizontalLine(),
-                    const MemberType(),
+                    const MemberType(
+                      title: 'Member Gold',
+                      color: AppColors.lightOrange,
+                    ),
                     SizedBox(height: 20.h),
                     const UserInformationSection(),
                     SizedBox(height: 20.h),

@@ -56,7 +56,7 @@ class HomeTap extends StatelessWidget {
               itemBuilder: (context, index) => Padding(
                 padding: EdgeInsets.symmetric(horizontal: 8.w),
                 child: RestaurantCard(
-                  onTap: () {},
+                  onTap: () => context.router.push(const RestaurantRoute()),
                 ),
               ),
             ),

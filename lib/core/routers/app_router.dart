@@ -11,6 +11,7 @@ import 'package:food_ninja/views/pages/notification/notification_page.dart';
 import 'package:food_ninja/views/pages/onboarding/onboarding_page.dart';
 import 'package:food_ninja/views/pages/payment_method/payment_method_page.dart';
 import 'package:food_ninja/views/pages/popular_menu/popular_menu_page.dart';
+import 'package:food_ninja/views/pages/restaurant/restaurant_page.dart';
 import 'package:food_ninja/views/pages/search/search_page.dart';
 import 'package:food_ninja/views/pages/set_location/set_location_page.dart';
 import 'package:food_ninja/views/pages/auth/signup/sign_up_page.dart';
@@ -47,5 +48,6 @@ class AppRouter extends _$AppRouter {
         AutoRoute(page: OrderDetailsRoute.page),
         //?Others
         AutoRoute(page: MapRoute.page),
+        AutoRoute(page: RestaurantRoute.page),
       ];
 }
