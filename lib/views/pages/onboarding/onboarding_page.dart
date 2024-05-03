@@ -1,7 +1,7 @@
-import 'package:auto_route/annotations.dart';
+import 'dart:developer';
+
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:food_ninja/core/constants/app_images.dart';
 import 'package:food_ninja/core/constants/app_strings.dart';
 import 'package:food_ninja/core/extensions/extensions.dart';
@@ -65,28 +65,36 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
                         Text(
                           data.title,
                           textAlign: TextAlign.center,
-                          style: context.textTheme.labelMedium,
+                          style: context.textTheme.headlineMedium!.copyWith(
+                            color: context.theme.canvasColor,
+                            fontWeight: FontWeight.w700,
+                          ),
                         ),
                         SizedBox(height: context.height * 0.03),
                         Text(
                           data.subTitle,
                           textAlign: TextAlign.center,
-                          style: context.textTheme.labelSmall!
-                              .copyWith(fontSize: 14.sp),
+                          style: context.textTheme.labelLarge!.copyWith(
+                            color: context.theme.canvasColor,
+                          ),
                         ),
                         SizedBox(height: context.height * 0.1),
-                        CustomButton(
-                          title: AppStrings.next,
-                          onTap: () {
-                            if (index == itemsList.length - 1) {
-                              context.router.replaceAll([const LoginRoute()]);
-                            }
-                            setState(() {
-                              controller.animateToPage(1,
-                                  duration: const Duration(milliseconds: 500),
-                                  curve: Curves.easeInOut);
-                            });
-                          },
+                        SizedBox(
+                          width: context.width * 0.5,
+                          child: CustomButton(
+                            title: AppStrings.next,
+                            onTap: () {
+                              if (index == itemsList.length - 1) {
+                                context.router.replaceAll([const LoginRoute()]);
+                                return;
+                              }
+                              setState(() {
+                                controller.animateToPage(1,
+                                    duration: const Duration(milliseconds: 500),
+                                    curve: Curves.easeInOut);
+                              });
+                            },
+                          ),
                         ),
                       ],
                     )

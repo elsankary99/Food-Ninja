@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:food_ninja/core/extensions/extensions.dart';
 import 'package:food_ninja/views/widgets/custom_logo.dart';
 
@@ -18,7 +17,10 @@ class LogoAndText extends StatelessWidget {
         SizedBox(height: context.height * 0.035),
         Text(
           title,
-          style: context.textTheme.labelMedium!.copyWith(fontSize: 20.sp),
+          style: context.textTheme.titleLarge!.copyWith(
+            color: context.theme.canvasColor,
+            fontWeight: FontWeight.w700,
+          ),
         ),
         SizedBox(height: context.height * 0.04),
       ],

@@ -25,6 +25,8 @@ class CustomTextFormField extends StatelessWidget {
     return TextFormField(
       validator: validator,
       controller: controller,
+      style: context.textTheme.titleMedium!
+          .copyWith(color: context.theme.canvasColor),
       cursorColor: AppColors.deepGreen,
       decoration: InputDecoration(
         suffixIcon: suffixIcon,
@@ -37,7 +39,7 @@ class CustomTextFormField extends StatelessWidget {
               )
             : null,
         hintText: hint,
-        hintStyle: context.textTheme.labelSmall!
+        hintStyle: context.textTheme.labelLarge!
             .copyWith(color: Colors.grey.withOpacity(0.6)),
         fillColor: context.theme.hoverColor,
         filled: true,

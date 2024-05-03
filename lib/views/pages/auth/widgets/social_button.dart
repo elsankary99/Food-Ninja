@@ -33,7 +33,9 @@ class SocialButton extends StatelessWidget {
             SizedBox(width: 10.w),
             Text(
               title,
-              style: context.textTheme.labelMedium!.copyWith(fontSize: 15.sp),
+              style: context.textTheme.labelLarge!.copyWith(
+                color: context.theme.canvasColor,
+              ),
             )
           ],
         ),

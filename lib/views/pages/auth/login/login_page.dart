@@ -7,10 +7,10 @@ import 'package:food_ninja/core/constants/app_strings.dart';
 import 'package:food_ninja/core/extensions/extensions.dart';
 import 'package:food_ninja/core/routers/app_router.dart';
 import 'package:food_ninja/views/pages/auth/widgets/logo_and_text.dart';
+import 'package:food_ninja/views/pages/auth/widgets/social_login.dart';
 import 'package:food_ninja/views/widgets/clickable_text.dart';
 import 'package:food_ninja/views/widgets/custom_button.dart';
 import 'package:food_ninja/views/widgets/custom_text_form_field.dart';
-import 'package:food_ninja/views/pages/auth/widgets/social_login.dart';
 
 @RoutePage()
 class LoginPage extends StatelessWidget {
@@ -48,19 +48,24 @@ class LoginPage extends StatelessWidget {
                   SizedBox(height: context.height * 0.02),
                   Text(
                     AppStrings.continueWith,
-                    style: context.textTheme.labelSmall!
-                        .copyWith(fontWeight: FontWeight.bold),
+                    style: context.textTheme.labelLarge!.copyWith(
+                        fontWeight: FontWeight.bold,
+                        color: context.theme.canvasColor),
                   ),
                   SizedBox(height: context.height * 0.02),
                   const LoginWithSocial(),
                   SizedBox(height: context.height * 0.02),
-                  Text(
-                    AppStrings.forgotPassword,
-                    style: context.textTheme.labelSmall!.copyWith(
-                        decoration: TextDecoration.underline,
-                        decorationColor: AppColors.deepGreen,
-                        fontWeight: FontWeight.bold,
-                        color: AppColors.deepGreen),
+                  InkWell(
+                    onTap: () =>
+                        context.router.push(const ResetPasswordRoute()),
+                    child: Text(
+                      AppStrings.forgotPassword,
+                      style: context.textTheme.labelLarge!.copyWith(
+                          decoration: TextDecoration.underline,
+                          decorationColor: AppColors.deepGreen,
+                          fontWeight: FontWeight.bold,
+                          color: AppColors.deepGreen),
+                    ),
                   ),
                   SizedBox(height: context.height * 0.04),
                   CustomButton(

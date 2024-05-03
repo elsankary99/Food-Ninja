@@ -19,12 +19,16 @@ class WelcomeText extends StatelessWidget {
         SizedBox(height: 22.h),
         Text(
           title,
-          style: context.textTheme.labelMedium!.copyWith(fontSize: 24.sp),
+          style: context.textTheme.headlineSmall!.copyWith(
+            fontWeight: FontWeight.bold,
+            color: context.theme.canvasColor,
+          ),
         ),
         SizedBox(height: context.height * 0.02),
         Text(
           subTitle,
-          style: context.textTheme.labelSmall!.copyWith(fontSize: 12.sp),
+          style: context.textTheme.bodySmall!.copyWith(
+              color: context.theme.canvasColor, fontWeight: FontWeight.bold),
         ),
         SizedBox(height: 22.h),
       ],

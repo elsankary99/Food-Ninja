@@ -9,11 +9,14 @@ class CustomBackButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: InkWell(
-        overlayColor: MaterialStateProperty.all(Colors.transparent),
-        onTap: () => context.router.pop(),
-        child: SizedBox(
-          child: SvgPicture.asset(Assets.assetsImagesBackButton),
+      child: Align(
+        alignment: AlignmentDirectional.topStart,
+        child: InkWell(
+          overlayColor: MaterialStateProperty.all(Colors.transparent),
+          onTap: () => context.router.pop(),
+          child: SizedBox(
+            child: SvgPicture.asset(Assets.assetsImagesBackButton),
+          ),
         ),
       ),
     );

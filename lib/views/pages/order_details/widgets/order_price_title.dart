@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:food_ninja/core/extensions/extensions.dart';
 
 class OrderPriceTitle extends StatelessWidget {
@@ -13,18 +12,18 @@ class OrderPriceTitle extends StatelessWidget {
     required this.title,
     required this.price,
     super.key,
-  }) : style = context.textTheme.labelSmall!.copyWith(
+  }) : style = context.textTheme.bodyLarge!.copyWith(
           fontWeight: FontWeight.w600,
-          fontSize: 14.sp,
+          color: Colors.white,
         );
   OrderPriceTitle.total(
     this.context, {
     required this.title,
     required this.price,
     super.key,
-  }) : style = context.textTheme.labelSmall!.copyWith(
+  }) : style = context.textTheme.titleLarge!.copyWith(
           fontWeight: FontWeight.bold,
-          fontSize: 20.sp,
+          color: Colors.white,
         );
   @override
   Widget build(BuildContext context) {

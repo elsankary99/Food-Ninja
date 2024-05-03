@@ -1,4 +1,3 @@
-import 'package:auto_route/annotations.dart';
 import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:food_ninja/core/constants/app_images.dart';
@@ -16,7 +15,7 @@ class SplashPage extends StatefulWidget {
 class _SplashPageState extends State<SplashPage> {
   Future<void> goToOnBoarding() async {
     Future.delayed(const Duration(seconds: 2), () {
-      context.router.replaceAll([const InitialRoute()]);
+      context.router.replaceAll([const OnBoardingRoute()]);
     });
   }
 

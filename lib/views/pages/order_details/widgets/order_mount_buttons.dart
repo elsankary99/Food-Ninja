@@ -52,9 +52,8 @@ class _OrderMountButtonsState extends State<OrderMountButtons> {
         const SizedBox(width: 8),
         Text(
           '$_count',
-          style: context.textTheme.labelMedium!.copyWith(
-            fontSize: 13.sp,
-          ),
+          style: context.textTheme.labelMedium!
+              .copyWith(color: context.theme.canvasColor),
         ),
         const SizedBox(width: 8),
         InkWell(

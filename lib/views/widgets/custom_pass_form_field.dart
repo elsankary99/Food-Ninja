@@ -27,6 +27,8 @@ class _CustomPassFormFieldState extends State<CustomPassFormField> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      style: context.textTheme.bodyLarge!
+          .copyWith(color: context.theme.canvasColor),
       validator: widget.validator,
       controller: widget.controller,
       obscureText: isObscure,
@@ -47,7 +49,7 @@ class _CustomPassFormFieldState extends State<CustomPassFormField> {
               )
             : null,
         hintText: widget.hint,
-        hintStyle: context.textTheme.labelSmall!
+        hintStyle: context.textTheme.bodyMedium!
             .copyWith(color: Colors.grey.withOpacity(0.6)),
         fillColor: Theme.of(context).disabledColor,
         filled: true,

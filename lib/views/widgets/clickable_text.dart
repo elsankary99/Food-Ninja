@@ -16,7 +16,7 @@ class ClickableText extends StatelessWidget {
       onTap: onTap,
       child: Text(
         text,
-        style: context.textTheme.labelSmall!.copyWith(
+        style: context.textTheme.labelLarge!.copyWith(
             decoration: TextDecoration.underline,
             decorationColor: AppColors.deepGreen,
             fontWeight: FontWeight.bold,

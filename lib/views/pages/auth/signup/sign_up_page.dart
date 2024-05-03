@@ -63,7 +63,8 @@ class SignUpPage extends StatelessWidget {
                   SizedBox(height: context.height * 0.015),
                   CustomButton(
                     title: AppStrings.createAccountButton,
-                    onTap: () {},
+                    onTap: () =>
+                        context.router.push(const UserInformationRoute()),
                   ),
                   SizedBox(height: context.height * 0.02),
                   ClickableText(

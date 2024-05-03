@@ -27,31 +27,26 @@ class UserInformationPage extends ConsumerWidget {
           ),
         ),
         child: SafeArea(
-          child: Padding(
+          child: ListView(
             padding: EdgeInsets.symmetric(horizontal: 16.w),
-            child: SingleChildScrollView(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  SizedBox(height: 10.h),
-                  const CustomBackButton(),
-                  const WelcomeText(
-                    title: AppStrings.fillBio,
-                    subTitle: AppStrings.bioDisplay,
-                  ),
-                  const CustomTextFormField(hint: AppStrings.firstName),
-                  SizedBox(height: context.height * 0.02),
-                  const CustomTextFormField(hint: AppStrings.lastName),
-                  SizedBox(height: context.height * 0.02),
-                  const CustomTextFormField(hint: AppStrings.mobileNumber),
-                  SizedBox(height: context.height * 0.25),
-                  Center(
-                    child: CustomButton(onTap: () {}, title: AppStrings.next),
-                  ),
-                  SizedBox(height: context.height * 0.02),
-                ],
+            children: [
+              SizedBox(height: 10.h),
+              const CustomBackButton(),
+              const WelcomeText(
+                title: AppStrings.fillBio,
+                subTitle: AppStrings.bioDisplay,
               ),
-            ),
+              const CustomTextFormField(hint: AppStrings.firstName),
+              SizedBox(height: context.height * 0.02),
+              const CustomTextFormField(hint: AppStrings.lastName),
+              SizedBox(height: context.height * 0.02),
+              const CustomTextFormField(hint: AppStrings.mobileNumber),
+              SizedBox(height: context.height * 0.25),
+              Center(
+                child: CustomButton(onTap: () {}, title: AppStrings.next),
+              ),
+              SizedBox(height: context.height * 0.02),
+            ],
           ),
         ),
       ),

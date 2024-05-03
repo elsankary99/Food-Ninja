@@ -18,8 +18,10 @@ class CustomLogo extends StatelessWidget {
           ),
           Text(
             AppStrings.deliveryFavoriteFood,
-            style: context.textTheme.labelSmall!
-                .copyWith(fontWeight: FontWeight.w600),
+            style: context.textTheme.labelSmall!.copyWith(
+              fontWeight: FontWeight.w600,
+              color: context.theme.canvasColor,
+            ),
           )
         ],
       ),

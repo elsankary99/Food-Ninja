@@ -68,6 +68,7 @@ class HomeTap extends StatelessWidget {
           ),
           SizedBox(height: 16.h),
           ListView.builder(
+            padding: EdgeInsets.only(bottom: context.height * 0.1),
             shrinkWrap: true,
             physics: const NeverScrollableScrollPhysics(),
             itemCount: 5,

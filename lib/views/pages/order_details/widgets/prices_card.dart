@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:food_ninja/core/constants/app_colors.dart';
 import 'package:food_ninja/core/constants/app_images.dart';
 
-import 'package:food_ninja/views/order_details/widgets/order_button.dart';
-import 'package:food_ninja/views/order_details/widgets/order_price_title.dart';
+import 'package:food_ninja/views/pages/order_details/widgets/order_button.dart';
+import 'package:food_ninja/views/pages/order_details/widgets/order_price_title.dart';
 
 class PricesCard extends StatelessWidget {
   const PricesCard({
@@ -14,6 +14,8 @@ class PricesCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(14),
+      margin: const EdgeInsets.symmetric(horizontal: 8) +
+          const EdgeInsets.only(bottom: 10),
       decoration: BoxDecoration(
         color: AppColors.green,
         borderRadius: BorderRadius.circular(15),
@@ -23,6 +25,7 @@ class PricesCard extends StatelessWidget {
         ),
       ),
       child: Column(
+        mainAxisSize: MainAxisSize.min,
         children: [
           OrderPriceTitle(
             context,

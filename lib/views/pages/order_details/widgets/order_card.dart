@@ -4,7 +4,7 @@ import 'package:food_ninja/core/constants/app_colors.dart';
 import 'package:food_ninja/core/constants/app_images.dart';
 import 'package:food_ninja/core/extensions/extensions.dart';
 
-import 'package:food_ninja/views/order_details/widgets/order_mount_buttons.dart';
+import 'package:food_ninja/views/pages/order_details/widgets/order_mount_buttons.dart';
 
 class OrderCard extends StatelessWidget {
   const OrderCard({
@@ -34,8 +34,9 @@ class OrderCard extends StatelessWidget {
             children: [
               Text(
                 'Green Noddle',
-                style: context.textTheme.labelMedium!.copyWith(
-                  fontSize: 16.sp,
+                style: context.textTheme.bodyLarge!.copyWith(
+                  color: context.theme.canvasColor,
+                  fontWeight: FontWeight.w600,
                 ),
               ),
               Text(
